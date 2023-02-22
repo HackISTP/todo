@@ -3,6 +3,7 @@ import { useState } from "react";
 import Todo from "../Todo/Todo";
 import AddTodo from "../AddTodo/AddTodo";
 import Header from "../Header/Header";
+import styles from "./TodoList.module.css";
 
 export default function TodoList({ filter }) {
   const [todos, setTodos] = useState([
@@ -23,8 +24,8 @@ export default function TodoList({ filter }) {
   const filtered = getFilteredItems(todos, filter);
 
   return (
-    <section>
-      <ul>
+    <section className={styles.container}>
+      <ul className={styles.list}>
         {filtered.map((item) => (
           <Todo
             key={item.id}
