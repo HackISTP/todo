@@ -5,6 +5,7 @@
   --color-text: #fff5ee;
   --color-accent: #db7093;
   --color-white: white;
+  --color-scrollbar: #f95a87;
 }
 body {
   margin: 0;
@@ -20,6 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
+  accent-color: var(--color-accent);
   background: rgb(242, 183, 183);
   background: linear-gradient(
     90deg,
@@ -55,4 +57,16 @@ ul {
 button {
   outline: none;
   border: none;
+}
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--color-bg-dark);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #f69bb8;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-scrollbar);
 }
