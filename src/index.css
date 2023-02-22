@@ -1,7 +1,7 @@
 :root {
-  --color-bg-dark: hsl(358, 53%, 58%);
+  --color-bg-dark: hsl(0, 42%, 91%);
   --color-bg: #f7f7f7d8;
-  --color-gray: #a9a9a9;
+  --color-grey: #d1d1d1;
   --color-text: #fff5ee;
   --color-accent: #db7093;
 }
@@ -31,6 +31,7 @@ body {
   height: 60%;
   max-width: 500px;
   background-color: var(--color-bg);
+  overflow: hidden;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
@@ -45,4 +46,8 @@ code {
 ul {
   list-style: none;
   padding-left: 0;
+}
+button {
+  outline: none;
+  border: none;
 }
